@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SudokuMaster.Library\SudokuMaster.Library.csproj" />
+    <ProjectReference Include="..\SudokuMaster.TestData\SudokuMaster.TestData.csproj" />
+  </ItemGroup>
+
 </Project>
