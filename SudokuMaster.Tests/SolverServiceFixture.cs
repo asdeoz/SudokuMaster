@@ -20,9 +20,17 @@ namespace SudokuMaster.Tests
         }
 
         [TestMethod]
-        public void SolverWorks()
+        public void SolverWorksForEasy()
         {
             var tSolved = _solver.Solve(_template1);
+
+            Assert.IsTrue(CheckTemplate(tSolved), "The Sudoku couldn't be solved.");
+        }
+
+        [TestMethod]
+        public void SolverWorksForHard()
+        {
+            var tSolved = _solver.Solve(_template2);
 
             Assert.IsTrue(CheckTemplate(tSolved), "The Sudoku couldn't be solved.");
         }
